@@ -19,8 +19,8 @@
     "fmt": "prettier --single-quote --trailing-comma es5 --no-semi --parser flow --write \"src/**/*.js\"",
     "fmt:precommit": "prettier --single-quote --trailing-comma es5 --no-semi --parser flow --write",
     "lint": "eslint -c .eslintrc . --ignore-pattern dist --ignore-pattern tasks --ignore-pattern dev",
-    "start": "start-storybook -p 9001 -c .storybook",
-    "storybook": "build-storybook -c stories -o docs/stories"
+    "start": "yarn storybook",
+    "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "dependencies": {
     "babel-cli": "^6.24.1",

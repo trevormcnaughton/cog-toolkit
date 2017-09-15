@@ -4,11 +4,12 @@ import { action } from '@storybook/addon-actions'
 import {
   Button,
   Card,
+  Grid,
   Input,
+  Loader,
   Modal,
   Notification,
   Textarea,
-  Grid,
 } from '../src'
 
 import ModalStory from './ModalStory'
@@ -78,6 +79,15 @@ storiesOf('Modal', module)
   .add('Basic', () => (
     <ModalStory />
   ))
+
+storiesOf('Loader', module)
+  .add('Default', () => (
+    <Loader />
+  ))
+  .add('Small', () => (
+    <Loader small />
+  ))
+
 
 storiesOf('Grid', module)
   .add('Basic (auto columns)', () => (

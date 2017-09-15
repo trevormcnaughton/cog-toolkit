@@ -1,12 +1,14 @@
 import { injectGlobal } from 'styled-components'
 import theme from './util/theme'
+
 import Button from './components/Button'
-import Input from './components/Input'
-import Textarea from './components/Textarea'
 import Card from './components/Card'
+import Grid from './components/Grid'
+import Input from './components/Input'
+import Loader from './components/Loader'
 import Modal from './components/Modal'
 import Notification from './components/Notification'
-import Grid from './components/Grid'
+import Textarea from './components/Textarea'
 
 injectGlobal`
   * {box-sizing: border-box;}
@@ -30,4 +32,14 @@ injectGlobal`
   }
 `
 
-export { theme, Button, Card, Input, Textarea, Modal, Notification, Grid }
+export {
+  theme,
+  Button,
+  Card,
+  Grid,
+  Input,
+  Loader,
+  Modal,
+  Notification,
+  Textarea,
+}
