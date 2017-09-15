@@ -15,11 +15,13 @@
   "scripts": {
     "build": "babel src -d dist",
     "dev": "nodemon --watch src --exec 'babel src -d dist'",
-    "postinstall": "babel src -d dist",
-    "fmt": "prettier --single-quote --trailing-comma es5 --no-semi --parser flow --write \"src/**/*.js\"",
     "fmt:precommit": "prettier --single-quote --trailing-comma es5 --no-semi --parser flow --write",
+    "fmt": "prettier --single-quote --trailing-comma es5 --no-semi --parser flow --write \"src/**/*.js\"",
     "lint": "eslint -c .eslintrc . --ignore-pattern dist --ignore-pattern tasks --ignore-pattern dev",
+    "postinstall": "babel src -d dist",
     "start": "start-storybook -p 9001 -c .storybook",
+    "test:watch": "node scripts/tests.js --env=jsdom --watch",
+    "test": "node scripts/tests.js --env=jsdom",
     "storybook": "build-storybook -c stories -o docs/stories"
   },
   "dependencies": {
@@ -29,8 +31,10 @@
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
     "babel-register": "^6.24.1",
-    "styled-components": "^2.1.0",
+    "jest": "^21.1.0",
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react-dom": "^15.6.1",
+    "react-test-renderer": "^15.6.1",
+    "styled-components": "^2.1.0"
   }
 }
