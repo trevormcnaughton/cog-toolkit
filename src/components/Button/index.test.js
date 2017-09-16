@@ -1,6 +1,5 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import sinon from 'sinon'
 
 import Button from './index'
 

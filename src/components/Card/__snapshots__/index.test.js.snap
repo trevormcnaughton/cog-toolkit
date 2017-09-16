@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card snapshots renders a card component 1`] = `
+<section
+  className="sc-bZQynM fGIniy"
+  style={undefined}
+>
+  Card
+</section>
+`;
+
+exports[`Card snapshots renders a card component with body 1`] = `
+<section
+  className="sc-gzVnrw hBKTKg"
+  style={undefined}
+>
+  <section
+    className="sc-bdVaJa HwIbV"
+  >
+    <p>
+      Some stuff in here
+    </p>
+  </section>
+</section>
+`;
+
+exports[`Card snapshots renders a card component with header, title, and body 1`] = `
+<section
+  className="sc-htoDjs erVDdY"
+  style={undefined}
+>
+  <header
+    className="sc-htpNat byljKJ"
+  >
+    <h2
+      className="sc-bxivhb gbvAzg"
+    >
+      Card Title
+    </h2>
+  </header>
+  <section
+    className="sc-bdVaJa HwIbV"
+  >
+    <p>
+      Some stuff in here
+    </p>
+  </section>
+</section>
+`;
