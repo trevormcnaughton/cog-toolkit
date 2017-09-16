@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Notification snapshots renders a default notification 1`] = `
+<section
+  className="sc-bdVaJa kvhSMU"
+  style={undefined}
+>
+  Default Notification
+</section>
+`;
+
+exports[`Notification snapshots renders a warning notification 1`] = `
+<section
+  className="sc-bwzfXH hkyWQW"
+  style={undefined}
+>
+  Default Notification
+</section>
+`;
+
+exports[`Notification snapshots renders an error notification 1`] = `
+<section
+  className="sc-bxivhb dpIgyD"
+  style={undefined}
+>
+  Default Notification
+</section>
+`;
+
+exports[`Notification snapshots renders an informational notification 1`] = `
+<section
+  className="sc-htpNat kVstz"
+  style={undefined}
+>
+  Default Notification
+</section>
+`;
