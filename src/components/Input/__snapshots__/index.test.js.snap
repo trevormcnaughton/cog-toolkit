@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input snapshots renders a basic input with label 1`] = `
+<span
+  className=""
+  style={undefined}
+>
+  <label
+    className="sc-bxivhb eDAJPq"
+  >
+    Some input
+  </label>
+  <input
+    className="sc-bdVaJa icFqkC"
+    disabled={false}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onKeyDown={[Function]}
+    placeholder="Some input"
+    readOnly={undefined}
+    style={undefined}
+    type="text"
+    value=""
+  />
+</span>
+`;
+
+exports[`Input snapshots renders a basic input with placeholder 1`] = `
+<span
+  className=""
+  style={undefined}
+>
+  <input
+    className="sc-bdVaJa icFqkC"
+    disabled={false}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onKeyDown={[Function]}
+    placeholder="Some input"
+    readOnly={undefined}
+    style={undefined}
+    type="text"
+    value=""
+  />
+</span>
+`;
