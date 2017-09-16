@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal snapshots renders a hidden modal 1`] = `null`;
+
+exports[`Modal snapshots renders a modal with header 1`] = `
+<section
+  className="sc-bdVaJa iEETSP"
+>
+  <section
+    className="sc-bwzfXH jMroiM"
+  >
+    <header
+      className="sc-htpNat biZOlL"
+    >
+      <h1
+        className="sc-bxivhb fBkLCD"
+      >
+        My Modal
+      </h1>
+      <section
+        className="sc-ifAKCX jMvEhG"
+        onClick={[Function]}
+      >
+        ×
+      </section>
+    </header>
+    <section
+      className="sc-EHOje eizxor"
+    >
+      Modal Stuff!
+    </section>
+  </section>
+</section>
+`;
+
+exports[`Modal snapshots renders a visible modal 1`] = `
+<section
+  className="sc-bdVaJa iEETSP"
+>
+  <section
+    className="sc-bwzfXH jMroiM"
+  >
+    <p>
+      Some modal
+    </p>
+  </section>
+</section>
+`;
