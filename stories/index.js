@@ -30,6 +30,13 @@ storiesOf('Button', module)
   .add('with some emoji', () => (
     <Button onClick={action('clicked')}>😀 😎 👍 💯</Button>
   ))
+  .add('disabled', () => (
+    <span>
+      <Button onClick={action('Should not log! Button is disabled')} disabled>Using `disabled` attribute</Button>
+      <Button onClick={action('Should not log! Button is disabled')} disabled={true}>Explicit disabled=true</Button>
+      <Button onClick={action('Button clicked, and that\'s okay!')} disabled={false}>Explicit disabled=false</Button>
+    </span>
+  ))
 
 storiesOf('Card', module)
   .add('Basic', () => (
