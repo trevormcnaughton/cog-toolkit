@@ -37,6 +37,7 @@ export default class Button extends PureComponent {
 
       :disabled {
         pointer-events: none;
+        cursor: not-allowed
         opacity: 0.7;
       }
     `
