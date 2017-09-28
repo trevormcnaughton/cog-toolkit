@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 export default class Button extends PureComponent {
   render() {
-    const { className, children, primary, fit, style, small } = this.props
+    const { className, children, disabled = false, primary, fit, style, small } = this.props
     const Button = styled.button`
       position: relative;
       display: inline-block;
@@ -34,11 +34,18 @@ export default class Button extends PureComponent {
         background: ${({ primary }) =>
           primary ? theme.color.primaryLight : theme.color.greyLightest};
       }
+
+      :disabled {
+        pointer-events: none;
+        cursor: not-allowed
+        opacity: 0.7;
+      }
     `
 
     return (
       <Button
         className={className}
+        disabled={disabled}
         style={style}
         onClick={this.props.onClick}
         primary={primary}
